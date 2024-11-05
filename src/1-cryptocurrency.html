@@ -15,8 +15,8 @@
           <a href="./index.html">Go to home</a>
           <h1>Welcome to page 1</h1>
           <div class="logo-container">
-            <div class="psevdo-elevent-nav-header"></div>
-            <div class="logo-nav-header">Logo</div>
+             <img class="navigation-logo-png" srs="./img/logo.png" alt="logo"/>
+
           </div>
           <ul class="nav-list">
             <li class="nav-item">
@@ -46,196 +46,337 @@
         <div class="main-container">
           <!-- container large _________________________-->
           <div class="containet-Large">
-            <ul class="solution-list">
-              <li class="solution-item">
-                <p class="solution-content"></p>
-                <h1 class="solution-title"></h1>
-                <p class="solution-date"></p>
-                <h5 class="solution-subtitle"></h5>
-                <img class="solution-img" src="" alt="" />
+            <ul class="solution-container">
+              <li class="solution-list">
+                <p class="solution-content">
+                  Cryptocurrencies > Bitcoin > News
+                </p>
+                <h1 class="solution-title">
+                  The Scalability Solution: Understanding <br />
+                  Layer One vs. Layer Two Blockchains
+                </h1>
+                <p class="solution-date">20 Sep 2023, 8:00pm</p>
+                <h5 class="solution-subtitle">by Alex House</h5>
+                <img
+                  class="solution-img"
+                  src=""
+                  alt="coin"
+                  width="670"
+                  height="446"
+                />
               </li>
             </ul>
             <ul class="description-list">
               <li class="description-item">
-                <a href="#" class="site-link">Посилання 1</a>
+                Layer one or L1 refers to a base blockchain protocol like
+                Bitcoin or Ethereum. These networks operate on a decentralized
+                ledger secured by<a
+                  href="https://news.bitcoin.com/deciphering-the-differences-between-proof-of-stake-and-proof-of-work/"
+                  class="site-link"
+                  >proof-of-work (PoW) mining or proof-of-stake (PoS) staking</a
+                >
+                . L1 chains such as Bitcoin and Ethereum offer unparalleled
+                security. However, during peak times, both of these chains
+                grapple with sluggish transaction speeds and steep fees.
               </li>
               <li class="description-item">
-                <a href="#" class="site-link">Посилання 2</a>
+                Developers from several L1 networks are working to improve layer
+                one scaling through methods like
+                <a
+                  href="https://news.bitcoin.com/bitcoin-cash-upgrade-milestone-complete-32mb-and-new-features/"
+                  class="site-link"
+                  >increasing</a
+                >
+                block size,
+                <a
+                  href="https://news.bitcoin.com/what-is-eip-4844-a-look-at-proto-danksharding-and-its-effect-on-rollup-fees/"
+                  class="site-link"
+                  >sharding,</a
+                >
+                and
+                <a
+                  href="https://news.bitcoin.com/what-is-the-merge-a-brief-explanation-of-ethereums-transition-from-proof-of-work-to-proof-of-stake/"
+                  class="site-link"
+                  >introducing</a
+                >
+                proof-of-stake consensus. However, substantial layer one
+                upgrades require coordination among node operators and can take
+                years to implement. Some blockchains intend to use L2 protocols
+                as either a temporary or long-term solution.
               </li>
               <li class="description-item">
-                <a href="#" class="site-link">Посилання 3</a>
+                Bitcoin's
+                <a
+                  href="https://lightning.network/lightning-network-paper.pdf"
+                  class="site-link"
+                  >Lightning Network</a
+                >
+                (LN) is a second-layer scaling solution designed to facilitate
+                faster, low-cost transactions on the Bitcoin blockchain (L1). It
+                operates on top of Bitcoins base layer, allowing for instant
+                payments by circumventing the need for block confirmations.
               </li>
               <li class="description-item">
-                <a href="#" class="site-link">Посилання 4</a>
+                Transactions on the Lightning Network occur off-chain in payment
+                channels between users. Only channel open and close transactions
+                are recorded on the Bitcoin blockchain. Participants can
+                transact multiple times within these channels, reducing
+                congestion and fees on L1.
               </li>
               <li class="description-item">
-                <a href="#" class="site-link">Посилання 5</a>
+                Critics target LN for its prevalent use of custodial wallets, as
+                these demand users place trust in third parties to handle their
+                money. Moreover, the off-chain method poses a risk: if nodes
+                lack proper backup, it could trigger an irrevocable loss of
+                funds.
               </li>
               <li class="description-item">
-                <a href="#" class="site-link">Посилання 6</a>
+                Loopring uses zero-knowledge rollups
+                <a
+                  href="https://news.bitcoin.com/what-are-rollups-ethereums-main-scaling-solution-examined/"
+                  class="site-link"
+                  >(ZK-rollups)</a
+                >
+                to batch hundreds of transactions off-chain and generate a
+                cryptographic proof verifying their validity. This proof is
+                submitted to layer one (Ethereum), avoiding the need to process
+                each transaction on-chain.
               </li>
               <li class="description-item">
-                <a href="#" class="site-link">Посилання 7</a>
+                Polygon ZKEVM also uses ZK-rollup technology to offer high
+                throughput Ethereum transactions with lower fees. On the risk
+                side, some believe that relying heavily on ZK-rollups can
+                introduce
+                <a href="https://arxiv.org/pdf/2306.02785" class="site-link"
+                  >centralization risks
+                </a>
+                as validators and sequencers become key to the system.
               </li>
             </ul>
           </div>
           <!-- container news_______________________ -->
           <div class="containner-medium">
-            <h1 class="title-news"></h1>
-            <div class="container-news">
-              <ul class="list-news">
-                <li class="item-news">
-                  <h4 class="subtitle-news"></h4>
-                  <p class="description-news"></p>
-                  <h6 class="title-date">
-                    <span class="number-wrapper"></span>
-                  </h6>
-                </li>
-                <li class="container-photo">
-                  <img src="" alt="" class="photo-news" />
-                </li>
-              </ul>
-            </div>
-            <div class="container-news">
-              <ul class="list-news">
-                <li class="item-news">
-                  <h4 class="subtitle-news"></h4>
-                  <p class="description-news"></p>
-                  <h6 class="title-date">
-                    <span class="number-wrapper"></span>
-                  </h6>
-                </li>
-                <li class="container-photo">
-                  <img src="" alt="" class="photo-news" />
-                </li>
-              </ul>
-            </div>
-            <div class="container-news">
-              <ul class="list-news">
-                <li class="item-news">
-                  <h4 class="subtitle-news"></h4>
-                  <p class="description-news"></p>
-                  <h6 class="title-date">
-                    <span class="number-wrapper"></span>
-                  </h6>
-                </li>
-                <li class="container-photo">
-                  <img src="" alt="" class="photo-news" />
-                </li>
-              </ul>
-            </div>
-            <div class="container-news">
-              <ul class="list-news">
-                <li class="item-news">
-                  <h4 class="subtitle-news"></h4>
-                  <p class="description-news"></p>
-                  <h6 class="title-date">
-                    <span class="number-wrapper"></span>
-                  </h6>
-                </li>
-                <li class="container-photo">
-                  <img src="" alt="" class="photo-news" />
-                </li>
-              </ul>
-            </div>
-            <div class="container-news">
-              <ul class="list-news">
-                <li class="item-news">
-                  <h4 class="subtitle-news"></h4>
-                  <p class="description-news"></p>
-                  <h6 class="title-date">
-                    <span class="number-wrapper"></span>
-                  </h6>
-                </li>
-                <li class="container-photo">
-                  <img src="" alt="" class="photo-news" />
-                </li>
-              </ul>
-            </div>
-            <div class="container-news">
-              <ul class="list-news">
-                <li class="item-news">
-                  <h4 class="subtitle-news"></h4>
-                  <p class="description-news"></p>
-                  <h6 class="title-date">
-                    <span class="number-wrapper"></span>
-                  </h6>
-                </li>
-                <li class="container-photo">
-                  <img src="" alt="" class="photo-news" />
-                </li>
-              </ul>
-            </div>
-            <ul class="list-news">
+            <h1 class="title-news">More News</h1>
+            <ul class="container-news">
               <li class="item-news">
-                <h4 class="subtitle-news"></h4>
-                <p class="description-news"></p>
+                <h4 class="subtitle-news">
+                  U.S. downs suspected Chinese spy balloon
+                </h4>
+                <p class="description-news">
+                  China called the vessel's downing “an<br />
+                  excessive reaction” and said it “retains the<br />
+                  right to respond...
+                </p>
                 <h6 class="title-date">
-                  <span class="number-wrapper"></span>
+                  Craig Bator -
+                  <span class="number-wrapper">27 Dec 2020</span>
+                </h6>
+              </li>
+              <li class="container-photo">
+                <img src="./img/laptop.jpg" alt="laptop" class="photo-news" />
+              </li>
+            </ul>
+            <ul class="container-news">
+              <li class="item-news">
+                <h4 class="subtitle-news">
+                  U.S. downs suspected Chinese spy balloon
+                </h4>
+                <p class="description-news">
+                  China called the vessel's downing “an<br />
+                  excessive reaction” and said it “retains the<br />
+                  right to respond...
+                </p>
+                <h6 class="title-date">
+                  Craig Bator -
+                  <span class="number-wrapper">27 Dec 2020</span>
+                </h6>
+              </li>
+              <li class="container-photo">
+                <img src="./img/one-coin.jpg" alt="one coin" class="photo-news" />
+              </li>
+            </ul>
+            <ul class="container-news">
+              <li class="item-news">
+                <h4 class="subtitle-news">
+                  U.S. downs suspected Chinese spy balloon
+                </h4>
+                <p class="description-news">
+                  China called the vessel's downing “an<br />
+                  excessive reaction” and said it “retains the<br />
+                  right to respond...
+                </p>
+                <h6 class="title-date">
+                  Craig Bator -
+                  <span class="number-wrapper">27 Dec 2020</span>
+                </h6>
+              </li>
+              <li class="container-photo">
+                <img src="./img/wealth.jpg" alt="wealth" class="photo-news" />
+              </li>
+            </ul>
+            <ul class="container-news">
+              <li class="item-news">
+                <h4 class="subtitle-news">
+                  U.S. downs suspected Chinese spy balloon
+                </h4>
+                <p class="description-news">
+                  China called the vessel's downing “an<br />
+                  excessive reaction” and said it “retains the<br />
+                  right to respond...
+                </p>
+                <h6 class="title-date">
+                  Craig Bator -
+                  <span class="number-wrapper">27 Dec 2020</span>
+                </h6>
+              </li>
+              <li class="container-photo">
+                <img src="./img/two-coins.jpg" alt="two coins" class="photo-news" />
+              </li>
+            </ul>
+            <ul class="container-news">
+              <li class="item-news">
+                <h4 class="subtitle-news">
+                  U.S. downs suspected Chinese spy balloon
+                </h4>
+                <p class="description-news">
+                  China called the vessel's downing “an<br />
+                  excessive reaction” and said it “retains the<br />
+                  right to respond...
+                </p>
+                <h6 class="title-date">
+                  Craig Bator -
+                  <span class="number-wrapper">27 Dec 2020</span>
+                </h6>
+              </li>
+              <li class="container-photo">
+                <img src="./img/network.jpg" alt="network" class="photo-news" />
+              </li>
+            </ul>
+            <ul class="container-news">
+              <li class="item-news">
+                <h4 class="subtitle-news">
+                  U.S. downs suspected Chinese spy balloon
+                </h4>
+                <p class="description-news">
+                  China called the vessel's downing “an <br />
+                  excessive reaction” and said it “retains the <br />
+                  right to respond...
+                </p>
+                <h6 class="title-date">
+                  <span class="number-wrapper">27 Dec 2020</span>
+                </h6>
+              </li>
+              <li class="container-photo">
+                <img src="./img/traffic.jpg" alt="traffic" class="photo-news" />
+              </li>
+            </ul>
+            <ul class="container-news">
+              <li class="item-news">
+                <h4 class="subtitle-news">
+                  U.S. downs suspected Chinese spy balloon
+                </h4>
+                <p class="description-news">
+                  China called the vessel's downing “an<br />
+                  excessive reaction” and said it “retains the<br />
+                  right to respond...
+                </p>
+                <h6 class="title-date">
+                  Craig Bator -
+                  <span class="number-wrapper">27 Dec 2020</span>
                 </h6>
               </li>
 
               <li class="container-photo">
+                <img src="./img/mobile.jpg" alt="mobile" class="photo-news" />
+              </li>
+            </ul>
+            <ul class="container-news">
+              <li class="item-news">
+                <h4 class="subtitle-news">
+                  U.S. downs suspected Chinese spy balloon
+                </h4>
+                <p class="description-news">
+                  China called the vessel's downing “an<br />
+                  excessive reaction” and said it “retains the<br />
+                  right to respond...
+                </p>
+                <h6 class="title-date">
+                  Craig Bator -
+                  <span class="number-wrapper">27 Dec 2020</span>
+                </h6>
+              </li>
+              <li class="container-photo">
+                <img src="./img/color-lion.jpg" alt="lion" class="photo-news" />
+              </li>
+            </ul>
+            <ul class="container-news">
+              <li class="item-news">
+                <h4 class="subtitle-news">
+                  U.S. downs suspected Chinese spy balloon
+                </h4>
+                <p class="description-news">
+                  China called the vessel's downing “an<br />
+                  excessive reaction” and said it “retains the<br />
+                  right to respond...
+                </p>
+                <h6 class="title-date">
+                  Craig Bator -
+                  <span class="number-wrapper">27 Dec 2020</span>
+                </h6>
+              </li>
+              <li class="container-photo">
                 <img src="" alt="" class="photo-news" />
               </li>
             </ul>
-            <div class="container-news">
-              <ul class="list-news">
-                <li class="item-news">
-                  <h4 class="subtitle-news"></h4>
-                  <p class="description-news"></p>
-                  <h6 class="title-date">
-                    <span class="number-wrapper"></span>
-                  </h6>
-                </li>
-                <li class="container-photo">
-                  <img src="" alt="" class="photo-news" />
-                </li>
-              </ul>
-            </div>
-            <div class="container-news">
-              <ul class="list-news">
-                <li class="item-news">
-                  <h4 class="subtitle-news"></h4>
-                  <p class="description-news"></p>
-                  <h6 class="title-date">
-                    <span class="number-wrapper"></span>
-                  </h6>
-                </li>
-                <li class="container-photo">
-                  <img src="" alt="" class="photo-news" />
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </section>
     </main>
+    <!-- section footer -->
     <footer>
       <div class="footer-container">
-        <ul class="footer-list">
-          <li class="wrapper-group">
-            <p class="item-group"></p>
-            <p class="item-group"></p>
+        <div class="footer-block"></div>
+        <ul class="wrapper-group">
+          <li class="footer-list">
+            <p class="item-group">
+              Logo Financial Group LLC<br/>
+              2022 Logo. All rights reserved
+            </p>
+
           </li>
-          <li class="wrapper-group">
-            <p class="item-group"></p>
-            <p class="item-group"></p>
+          <li class="footer-list">
+            <p class="item-group">
+              Privacy Policy
+            </p>
+            <p class="item-group">
+              Terms of Services
+            </p>
+            <p class="item-group">
+              Disclaimer
+            </p>
           </li>
         </ul>
 
-        <ul class="footer-list">
-          <li class="wrapper-adress">
-            <p class="item-adress"></p>
-            <p class="item-adress"></p>
+        <ul class="wrapper-group">
+          <li class="footer-list">
+            <p class="item-adress">
+              2972 Westheimer Rd. Santa Ana, Illinois<br/>
+               85486
+            </p>
+
           </li>
-          <li class="wrapper-adress">
-            <p class="item-adress"></p>
-            <p class="item-adress"></p>
+          <li class="footer-list">
+            <p class="item-adress">
+              Phone: (406) 555-0120
+            </p>
+            <p class="item-adress">
+              Email: logo@gmail.com
+            </p>
           </li>
         </ul>
-        <div class="wrapper-footer">
-          <svg class="fouter-svg"></svg>
+        </div>
+        <div class="wrapper-logo">
+          <img class="footer-logo" srs="./img/logo.png" alt="logo"/>
         </div>
       </div>
     </footer>
