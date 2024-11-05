@@ -8,7 +8,152 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: #f0f8ff;
   color: #212121;
   line-height: 1.5;
+}
+.header-navigation {
+  background-color: #000d1f;
+}
+
+.header-container {
+  max-width: 1400px;
+  height: 80px;
+}
+
+.logo-container {
+  width: 238px;
+}
+.psevdo-elevent-nav-header {
+  color: #f2994a;
+}
+.logo-nav-header {
+  color: white;
+}
+.nav-list {
+  width: 396px;
+  height: 25px;
+}
+.nav-list.nav-item {
+  color: white;
+}
+.block .nav-item:first-child {
+  color: #f2994a;
+}
+
+.address-link {
+  color: white;
+}
+.main-section {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.main-container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.containet-Large {
+  background-color: #fafafa;
+}
+.solution-list {
+  padding: 10px;
+}
+.solution-list {
+  width: 600px;
+}
+.solution-content {
+  color: #02234d;
+}
+.solution-content:last-child {
+  color: #a7b2c0;
+}
+.solution-title {
+  font-size: 700px;
+  color: #02234d;
+}
+.solution-date {
+  color: #50739f;
+}
+.solution-subtitle {
+  color: #02234d;
+}
+.solution-img {
+  width: 670px;
+  height: 446px;
+}
+.description-list {
+  padding: 10px;
+}
+.description-item {
+  color: #02234d;
+  font-size: 400px;
+}
+.site-link {
+  text-decoration: underline;
+  color: #000d1f;
+}
+.containner-medium {
+  background-color: #fafafa;
+}
+.title-news {
+  font-weight: 700px;
+  color: #02234d;
+}
+/* .list-news {
+} */
+.item-news {
+  width: 410px;
+  height: 170px;
+  padding: 25px 0px 25px 0px;
+}
+.subtitle-news {
+  color: #1a1a1a;
+  font-size: 500px;
+}
+.description-news {
+  font-size: 400px;
+  color: #090920b2;
+}
+.title-date {
+  color: #090920b2;
+}
+.number-wrapper {
+  color: #b4b7c1;
+}
+.container-photo {
+  width: 140px;
+  height: 120px;
+}
+.photo-news {
+  object-fit: cover;
+}
+.footer-container {
+  background-color: #000d1f;
+}
+.footer-list {
+  width: 1400px;
+  height: 296px;
+}
+.wrapper-group {
+  width: 270px;
+  height: 150px;
+}
+.item-group {
+  color: white;
+}
+.wrapper-adress {
+  width: 270px;
+  height: 150px;
+}
+.wrapper-logo {
+  width: 468px;
+  height: 135px;
+}
+.psevdoelement-fouter {
+  color: #f2994a;
+}
+.fouter-svg {
+  width: 122px;
+  height: 62px;
+  color: white;
 }
