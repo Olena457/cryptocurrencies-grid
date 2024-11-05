@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cryptocurrencies</title>
     
-    <script type="module" crossorigin src="/cryptocurrencies-grid/assets/styles-a426df65.js"></script>
-    <link rel="stylesheet" href="/cryptocurrencies-grid/assets/styles-4824024a.css">
+    <script type="module" crossorigin src="/cryptocurrencies-grid/assets/styles-1cdb8285.js"></script>
+    <link rel="stylesheet" href="/cryptocurrencies-grid/assets/styles-13986d18.css">
   </head>
 
   <body>
@@ -17,8 +17,8 @@
           <a href="./index.html">Go to home</a>
           <h1>Welcome to page 1</h1>
           <div class="logo-container">
-            <div class="psevdo-elevent-nav-header"></div>
-            <div class="logo-nav-header">Logo</div>
+             <img class="navigation-logo-png" srs="./img/logo.png" alt="logo"/>
+
           </div>
           <ul class="nav-list">
             <li class="nav-item">
@@ -48,196 +48,337 @@
         <div class="main-container">
           <!-- container large _________________________-->
           <div class="containet-Large">
-            <ul class="solution-list">
-              <li class="solution-item">
-                <p class="solution-content"></p>
-                <h1 class="solution-title"></h1>
-                <p class="solution-date"></p>
-                <h5 class="solution-subtitle"></h5>
-                <img class="solution-img" src="" alt="" />
+            <ul class="solution-container">
+              <li class="solution-list">
+                <p class="solution-content">
+                  Cryptocurrencies > Bitcoin > News
+                </p>
+                <h1 class="solution-title">
+                  The Scalability Solution: Understanding <br />
+                  Layer One vs. Layer Two Blockchains
+                </h1>
+                <p class="solution-date">20 Sep 2023, 8:00pm</p>
+                <h5 class="solution-subtitle">by Alex House</h5>
+                <img
+                  class="solution-img"
+                  src=""
+                  alt="coin"
+                  width="670"
+                  height="446"
+                />
               </li>
             </ul>
             <ul class="description-list">
               <li class="description-item">
-                <a href="#" class="site-link">Посилання 1</a>
+                Layer one or L1 refers to a base blockchain protocol like
+                Bitcoin or Ethereum. These networks operate on a decentralized
+                ledger secured by<a
+                  href="https://news.bitcoin.com/deciphering-the-differences-between-proof-of-stake-and-proof-of-work/"
+                  class="site-link"
+                  >proof-of-work (PoW) mining or proof-of-stake (PoS) staking</a
+                >
+                . L1 chains such as Bitcoin and Ethereum offer unparalleled
+                security. However, during peak times, both of these chains
+                grapple with sluggish transaction speeds and steep fees.
               </li>
               <li class="description-item">
-                <a href="#" class="site-link">Посилання 2</a>
+                Developers from several L1 networks are working to improve layer
+                one scaling through methods like
+                <a
+                  href="https://news.bitcoin.com/bitcoin-cash-upgrade-milestone-complete-32mb-and-new-features/"
+                  class="site-link"
+                  >increasing</a
+                >
+                block size,
+                <a
+                  href="https://news.bitcoin.com/what-is-eip-4844-a-look-at-proto-danksharding-and-its-effect-on-rollup-fees/"
+                  class="site-link"
+                  >sharding,</a
+                >
+                and
+                <a
+                  href="https://news.bitcoin.com/what-is-the-merge-a-brief-explanation-of-ethereums-transition-from-proof-of-work-to-proof-of-stake/"
+                  class="site-link"
+                  >introducing</a
+                >
+                proof-of-stake consensus. However, substantial layer one
+                upgrades require coordination among node operators and can take
+                years to implement. Some blockchains intend to use L2 protocols
+                as either a temporary or long-term solution.
               </li>
               <li class="description-item">
-                <a href="#" class="site-link">Посилання 3</a>
+                Bitcoin's
+                <a
+                  href="https://lightning.network/lightning-network-paper.pdf"
+                  class="site-link"
+                  >Lightning Network</a
+                >
+                (LN) is a second-layer scaling solution designed to facilitate
+                faster, low-cost transactions on the Bitcoin blockchain (L1). It
+                operates on top of Bitcoins base layer, allowing for instant
+                payments by circumventing the need for block confirmations.
               </li>
               <li class="description-item">
-                <a href="#" class="site-link">Посилання 4</a>
+                Transactions on the Lightning Network occur off-chain in payment
+                channels between users. Only channel open and close transactions
+                are recorded on the Bitcoin blockchain. Participants can
+                transact multiple times within these channels, reducing
+                congestion and fees on L1.
               </li>
               <li class="description-item">
-                <a href="#" class="site-link">Посилання 5</a>
+                Critics target LN for its prevalent use of custodial wallets, as
+                these demand users place trust in third parties to handle their
+                money. Moreover, the off-chain method poses a risk: if nodes
+                lack proper backup, it could trigger an irrevocable loss of
+                funds.
               </li>
               <li class="description-item">
-                <a href="#" class="site-link">Посилання 6</a>
+                Loopring uses zero-knowledge rollups
+                <a
+                  href="https://news.bitcoin.com/what-are-rollups-ethereums-main-scaling-solution-examined/"
+                  class="site-link"
+                  >(ZK-rollups)</a
+                >
+                to batch hundreds of transactions off-chain and generate a
+                cryptographic proof verifying their validity. This proof is
+                submitted to layer one (Ethereum), avoiding the need to process
+                each transaction on-chain.
               </li>
               <li class="description-item">
-                <a href="#" class="site-link">Посилання 7</a>
+                Polygon ZKEVM also uses ZK-rollup technology to offer high
+                throughput Ethereum transactions with lower fees. On the risk
+                side, some believe that relying heavily on ZK-rollups can
+                introduce
+                <a href="https://arxiv.org/pdf/2306.02785" class="site-link"
+                  >centralization risks
+                </a>
+                as validators and sequencers become key to the system.
               </li>
             </ul>
           </div>
           <!-- container news_______________________ -->
           <div class="containner-medium">
-            <h1 class="title-news"></h1>
-            <div class="container-news">
-              <ul class="list-news">
-                <li class="item-news">
-                  <h4 class="subtitle-news"></h4>
-                  <p class="description-news"></p>
-                  <h6 class="title-date">
-                    <span class="number-wrapper"></span>
-                  </h6>
-                </li>
-                <li class="container-photo">
-                  <img src="" alt="" class="photo-news" />
-                </li>
-              </ul>
-            </div>
-            <div class="container-news">
-              <ul class="list-news">
-                <li class="item-news">
-                  <h4 class="subtitle-news"></h4>
-                  <p class="description-news"></p>
-                  <h6 class="title-date">
-                    <span class="number-wrapper"></span>
-                  </h6>
-                </li>
-                <li class="container-photo">
-                  <img src="" alt="" class="photo-news" />
-                </li>
-              </ul>
-            </div>
-            <div class="container-news">
-              <ul class="list-news">
-                <li class="item-news">
-                  <h4 class="subtitle-news"></h4>
-                  <p class="description-news"></p>
-                  <h6 class="title-date">
-                    <span class="number-wrapper"></span>
-                  </h6>
-                </li>
-                <li class="container-photo">
-                  <img src="" alt="" class="photo-news" />
-                </li>
-              </ul>
-            </div>
-            <div class="container-news">
-              <ul class="list-news">
-                <li class="item-news">
-                  <h4 class="subtitle-news"></h4>
-                  <p class="description-news"></p>
-                  <h6 class="title-date">
-                    <span class="number-wrapper"></span>
-                  </h6>
-                </li>
-                <li class="container-photo">
-                  <img src="" alt="" class="photo-news" />
-                </li>
-              </ul>
-            </div>
-            <div class="container-news">
-              <ul class="list-news">
-                <li class="item-news">
-                  <h4 class="subtitle-news"></h4>
-                  <p class="description-news"></p>
-                  <h6 class="title-date">
-                    <span class="number-wrapper"></span>
-                  </h6>
-                </li>
-                <li class="container-photo">
-                  <img src="" alt="" class="photo-news" />
-                </li>
-              </ul>
-            </div>
-            <div class="container-news">
-              <ul class="list-news">
-                <li class="item-news">
-                  <h4 class="subtitle-news"></h4>
-                  <p class="description-news"></p>
-                  <h6 class="title-date">
-                    <span class="number-wrapper"></span>
-                  </h6>
-                </li>
-                <li class="container-photo">
-                  <img src="" alt="" class="photo-news" />
-                </li>
-              </ul>
-            </div>
-            <ul class="list-news">
+            <h1 class="title-news">More News</h1>
+            <ul class="container-news">
               <li class="item-news">
-                <h4 class="subtitle-news"></h4>
-                <p class="description-news"></p>
+                <h4 class="subtitle-news">
+                  U.S. downs suspected Chinese spy balloon
+                </h4>
+                <p class="description-news">
+                  China called the vessel's downing “an<br />
+                  excessive reaction” and said it “retains the<br />
+                  right to respond...
+                </p>
                 <h6 class="title-date">
-                  <span class="number-wrapper"></span>
+                  Craig Bator -
+                  <span class="number-wrapper">27 Dec 2020</span>
+                </h6>
+              </li>
+              <li class="container-photo">
+                <img src="/cryptocurrencies-grid/assets/laptop-e964309b.jpg" alt="laptop" class="photo-news" />
+              </li>
+            </ul>
+            <ul class="container-news">
+              <li class="item-news">
+                <h4 class="subtitle-news">
+                  U.S. downs suspected Chinese spy balloon
+                </h4>
+                <p class="description-news">
+                  China called the vessel's downing “an<br />
+                  excessive reaction” and said it “retains the<br />
+                  right to respond...
+                </p>
+                <h6 class="title-date">
+                  Craig Bator -
+                  <span class="number-wrapper">27 Dec 2020</span>
+                </h6>
+              </li>
+              <li class="container-photo">
+                <img src="/cryptocurrencies-grid/assets/one-coin-a4d0f866.jpg" alt="one coin" class="photo-news" />
+              </li>
+            </ul>
+            <ul class="container-news">
+              <li class="item-news">
+                <h4 class="subtitle-news">
+                  U.S. downs suspected Chinese spy balloon
+                </h4>
+                <p class="description-news">
+                  China called the vessel's downing “an<br />
+                  excessive reaction” and said it “retains the<br />
+                  right to respond...
+                </p>
+                <h6 class="title-date">
+                  Craig Bator -
+                  <span class="number-wrapper">27 Dec 2020</span>
+                </h6>
+              </li>
+              <li class="container-photo">
+                <img src="/cryptocurrencies-grid/assets/wealth-7482c4c9.jpg" alt="wealth" class="photo-news" />
+              </li>
+            </ul>
+            <ul class="container-news">
+              <li class="item-news">
+                <h4 class="subtitle-news">
+                  U.S. downs suspected Chinese spy balloon
+                </h4>
+                <p class="description-news">
+                  China called the vessel's downing “an<br />
+                  excessive reaction” and said it “retains the<br />
+                  right to respond...
+                </p>
+                <h6 class="title-date">
+                  Craig Bator -
+                  <span class="number-wrapper">27 Dec 2020</span>
+                </h6>
+              </li>
+              <li class="container-photo">
+                <img src="data:image/jpeg;base64,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" alt="two coins" class="photo-news" />
+              </li>
+            </ul>
+            <ul class="container-news">
+              <li class="item-news">
+                <h4 class="subtitle-news">
+                  U.S. downs suspected Chinese spy balloon
+                </h4>
+                <p class="description-news">
+                  China called the vessel's downing “an<br />
+                  excessive reaction” and said it “retains the<br />
+                  right to respond...
+                </p>
+                <h6 class="title-date">
+                  Craig Bator -
+                  <span class="number-wrapper">27 Dec 2020</span>
+                </h6>
+              </li>
+              <li class="container-photo">
+                <img src="data:image/jpeg;base64,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" alt="network" class="photo-news" />
+              </li>
+            </ul>
+            <ul class="container-news">
+              <li class="item-news">
+                <h4 class="subtitle-news">
+                  U.S. downs suspected Chinese spy balloon
+                </h4>
+                <p class="description-news">
+                  China called the vessel's downing “an <br />
+                  excessive reaction” and said it “retains the <br />
+                  right to respond...
+                </p>
+                <h6 class="title-date">
+                  <span class="number-wrapper">27 Dec 2020</span>
+                </h6>
+              </li>
+              <li class="container-photo">
+                <img src="data:image/jpeg;base64,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" alt="traffic" class="photo-news" />
+              </li>
+            </ul>
+            <ul class="container-news">
+              <li class="item-news">
+                <h4 class="subtitle-news">
+                  U.S. downs suspected Chinese spy balloon
+                </h4>
+                <p class="description-news">
+                  China called the vessel's downing “an<br />
+                  excessive reaction” and said it “retains the<br />
+                  right to respond...
+                </p>
+                <h6 class="title-date">
+                  Craig Bator -
+                  <span class="number-wrapper">27 Dec 2020</span>
                 </h6>
               </li>
 
               <li class="container-photo">
+                <img src="data:image/jpeg;base64,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" alt="mobile" class="photo-news" />
+              </li>
+            </ul>
+            <ul class="container-news">
+              <li class="item-news">
+                <h4 class="subtitle-news">
+                  U.S. downs suspected Chinese spy balloon
+                </h4>
+                <p class="description-news">
+                  China called the vessel's downing “an<br />
+                  excessive reaction” and said it “retains the<br />
+                  right to respond...
+                </p>
+                <h6 class="title-date">
+                  Craig Bator -
+                  <span class="number-wrapper">27 Dec 2020</span>
+                </h6>
+              </li>
+              <li class="container-photo">
+                <img src="/cryptocurrencies-grid/assets/color-lion-9120f9ba.jpg" alt="lion" class="photo-news" />
+              </li>
+            </ul>
+            <ul class="container-news">
+              <li class="item-news">
+                <h4 class="subtitle-news">
+                  U.S. downs suspected Chinese spy balloon
+                </h4>
+                <p class="description-news">
+                  China called the vessel's downing “an<br />
+                  excessive reaction” and said it “retains the<br />
+                  right to respond...
+                </p>
+                <h6 class="title-date">
+                  Craig Bator -
+                  <span class="number-wrapper">27 Dec 2020</span>
+                </h6>
+              </li>
+              <li class="container-photo">
                 <img src="" alt="" class="photo-news" />
               </li>
             </ul>
-            <div class="container-news">
-              <ul class="list-news">
-                <li class="item-news">
-                  <h4 class="subtitle-news"></h4>
-                  <p class="description-news"></p>
-                  <h6 class="title-date">
-                    <span class="number-wrapper"></span>
-                  </h6>
-                </li>
-                <li class="container-photo">
-                  <img src="" alt="" class="photo-news" />
-                </li>
-              </ul>
-            </div>
-            <div class="container-news">
-              <ul class="list-news">
-                <li class="item-news">
-                  <h4 class="subtitle-news"></h4>
-                  <p class="description-news"></p>
-                  <h6 class="title-date">
-                    <span class="number-wrapper"></span>
-                  </h6>
-                </li>
-                <li class="container-photo">
-                  <img src="" alt="" class="photo-news" />
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </section>
     </main>
+    <!-- section footer -->
     <footer>
       <div class="footer-container">
-        <ul class="footer-list">
-          <li class="wrapper-group">
-            <p class="item-group"></p>
-            <p class="item-group"></p>
+        <div class="footer-block"></div>
+        <ul class="wrapper-group">
+          <li class="footer-list">
+            <p class="item-group">
+              Logo Financial Group LLC<br/>
+              2022 Logo. All rights reserved
+            </p>
+
           </li>
-          <li class="wrapper-group">
-            <p class="item-group"></p>
-            <p class="item-group"></p>
+          <li class="footer-list">
+            <p class="item-group">
+              Privacy Policy
+            </p>
+            <p class="item-group">
+              Terms of Services
+            </p>
+            <p class="item-group">
+              Disclaimer
+            </p>
           </li>
         </ul>
 
-        <ul class="footer-list">
-          <li class="wrapper-adress">
-            <p class="item-adress"></p>
-            <p class="item-adress"></p>
+        <ul class="wrapper-group">
+          <li class="footer-list">
+            <p class="item-adress">
+              2972 Westheimer Rd. Santa Ana, Illinois<br/>
+               85486
+            </p>
+
           </li>
-          <li class="wrapper-adress">
-            <p class="item-adress"></p>
-            <p class="item-adress"></p>
+          <li class="footer-list">
+            <p class="item-adress">
+              Phone: (406) 555-0120
+            </p>
+            <p class="item-adress">
+              Email: logo@gmail.com
+            </p>
           </li>
         </ul>
-        <div class="wrapper-footer">
-          <svg class="fouter-svg"></svg>
+        </div>
+        <div class="wrapper-logo">
+          <img class="footer-logo" srs="./img/logo.png" alt="logo"/>
         </div>
       </div>
     </footer>
