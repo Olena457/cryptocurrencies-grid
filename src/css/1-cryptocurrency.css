@@ -1,12 +1,7 @@
 *::after {
   box-sizing: border-box;
 }
-.main-container {
-  display: grid;
-  gap: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
+
 body {
   /* margin: 16px; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
@@ -17,30 +12,81 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+/* home main______________________ */
+.home-body {
+  margin: 15px;
+  background-image: url('../img/bitcoin-large.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.title-baner {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 48px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  color: wheat;
+}
+.title-currency {
+  display: block;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 500;
+  cursor: pointer;
+  color: wheat;
+}
+/* ________________________________________ */
 .header-navigation {
   background-color: #000d1f;
 }
-
 .header-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding-left: 50px;
+  position: relative;
   gap: 25px;
   max-width: 1400px;
   height: 80px;
+}
+.wrapper-toggle {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  row-gap: 5px;
+}
+.go-home {
+  display: block;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+  cursor: pointer;
+  color: #f2994a;
+  position: absolute;
+  top: 25px;
+  left: 50px;
 }
 
 .logo-container {
   display: flex;
   flex-direction: row;
-  margin-left: 50px;
-  gap: 5px;
+  margin-left: 120px;
+  gap: 8px;
   width: 238px;
   padding: 20px 50px;
 }
 .logo-container::before {
+  content: '';
   width: 1px;
-  height: 35px;
+  height: 30px;
   background-color: #f2994a;
-  /* margin-right: 5px; */
 }
 .navigation-logo-png {
   width: 72px;
@@ -48,13 +94,22 @@ body {
   color: white;
 }
 .nav-list {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  top: 25px;
+  right: 50px;
   width: 396px;
-  height: 25px;
+  height: 35px;
 }
 .nav-item {
+  margin-right: 25px;
+  font-size: 14px;
+  font-weight: 500;
   color: white;
 }
-.nav-list.nav-item:first-child {
+.nav-list .nav-item:first-child .nav-link {
   color: #f2994a;
 }
 
@@ -63,12 +118,43 @@ body {
   line-height: 1.5;
   color: white;
 }
-.main-section {
-  padding-top: 25px;
-  padding-bottom: 25px;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: 670px 470px; */
+  column-gap: 30px;
+  /* padding: 0 50px; */
+  /* max-width: 100%;
+  margin: 0 auto; */
+  height: 1556px;
+}
+/* @media (max-width: 1400px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+  .container-large,
+  .container-medium {
+    width: 100%;
+  }
+} */
+
+.title-news {
+  font-size: 30px;
+  line-height: 1.3;
+  font-weight: 700px;
+  color: #02234d;
+}
+.section {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .containet-large {
+  /* position: absolute;
+  top: 0;
+  right: 0; */
+  width: 670px;
   background-color: #fafafa;
 }
 .solution-container {
@@ -105,6 +191,7 @@ body {
   color: #02234d;
 }
 .solution-img {
+  display: block;
   width: 670px;
   height: 446px;
 }
@@ -118,23 +205,18 @@ body {
   color: #02234d;
 }
 .site-link {
+  display: block;
   font-size: 16px;
   line-height: 1.3;
   text-decoration: underline;
   color: #000d1f;
 }
 .containner-medium {
-  width: 670px;
-  height: 1496px;
+  width: 470px;
   background-color: #fafafa;
 }
-.title-news {
-  font-size: 30px;
-  line-height: 1.3;
-  font-weight: 700px;
-  color: #02234d;
-}
-.container-news {
+
+/* .container-news {
   width: 410px;
   height: 170px;
   padding: 25px 0px 25px 0px;
@@ -142,7 +224,7 @@ body {
 .container-news:not(:first-child) {
   border-top: 2px;
   background-color: #e6e9ee;
-}
+} */
 
 .item-news {
   display: grid;
@@ -176,12 +258,13 @@ body {
   height: 120px;
 }
 .photo-news {
+  display: block;
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
 .footer-container {
-  width: 1400px;
+  min-width: 1400px;
   height: 296px;
   padding-left: 50px;
   padding-right: 50px;
@@ -216,7 +299,9 @@ body {
   line-height: 1.5;
   color: white;
 }
-
+.item-adress {
+  color: #fafafa;
+}
 .wrapper-logo {
   display: flex;
   flex-direction: row;
