@@ -1,5 +1,6 @@
 body {
   margin: 0 auto;
+  margin-bottom: 20px;
   background-color: #f0f8ff;
   margin: 0 auto;
   font-family: 'Fira Sans', sans-serif;
@@ -9,18 +10,8 @@ body {
   min-height: 100vh;
 }
 
-.go-home {
-  display: block;
-  margin: 10px 0px 0px 35px;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-  color: #f2994a;
-}
-
 .template {
   display: flex;
-  /* flex-wrap: nowrap; */
   background-color: #ffffff;
   flex-direction: column;
   justify-content: center;
@@ -28,9 +19,12 @@ body {
   max-width: 1400px;
   row-gap: 20px;
   width: 100%;
-  border: 2px solid red;
-  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 470px) {
@@ -51,11 +45,22 @@ body {
   gap: 15px;
   margin-bottom: 10px;
 }
-.insights-title {
-  font-size: 72px;
-  line-height: 1;
+
+.go-home {
+  display: block;
+  font-size: 14px;
   font-weight: 500;
+  cursor: pointer;
+  color: #f2994a;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.insights-title {
+  font-size: 68px;
+  color: #02234d;
+  line-height: 1;
+  font-weight: 600;
   margin: 0 auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 .custom-line {
   width: 100%;
@@ -63,20 +68,18 @@ body {
   border: none;
   height: 2px;
   background-color: #f2994a;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
-/* .tokens-wrapper {
-  width: 1584px;
-} */
+
 .tokens-title {
   font-weight: 700;
   font-size: 80;
+  color: #02234d;
   line-height: 1.05;
   margin: 0 auto;
 }
 /* ____________after title */
-/* .altcoins-wrapper {
-  width: 576px;
-} */
+
 .part-first {
   display: grid;
   grid-template-columns: 2fr 2.4fr 1.5fr;
@@ -102,21 +105,19 @@ body {
 .picture-wraper {
   grid-area: picture-wraper;
   display: block;
-  background-color: green;
-  /* height: 600px; */
-  /* height: 600px; */
-  /* margin-left: 5px;  */
-
-  /* background-image: url('../img/bitcoin-color.jpg'); */
-  /* background-size: cover;
-
-  background-position: center;
-  overflow-y: hidden;
-  background-repeat: no-repeat; */
-  /* background-attachment: fixed;
-  position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 60px;
+  background-color: rgb(8, 90, 148);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.5);
 }
-
+.icon {
+  width: 100%;
+  height: 100%;
+}
 .market-title {
   grid-area: market-title;
   font-size: 28px;
@@ -145,14 +146,6 @@ body {
 }
 @media (max-width: 470px) {
   .part-first {
-    /* grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      'altcoins-title '
-      'altcoins-description'
-      'picture-wraper'
-      'market-title'
-      'market-description'; */
     align-items: center;
     align-content: center;
   }
@@ -192,57 +185,54 @@ body {
       'des-last';
     align-items: center;
     align-content: center;
+    gap: 15px;
   }
 }
-/* .wrapper-two-description {
-  display: grid;
-  grid-template-columns: 1.2fr 1.2fr;
-  grid-template-rows: 112px auto;
-  grid-template-areas:
-    'b-t l-t'
-    'b-d l-d';
-  gap: 10px 5px;
-} */
+
 .bitcoin-title {
   grid-area: b-t;
   font-size: 24px;
   line-height: 1.2;
-  /* width: 276px; */
   margin-top: 10px;
 }
 .bitcoin-description {
+  border-right: 2px solid #f2994a;
+  padding-right: 5px;
   grid-area: b-d;
   font-size: 12px;
   line-height: 1.2;
-  /* margin-top: 10px; */
 }
-/* .lines-wrapper {
-  width: 288px;
-  margin-right: 5px;
-} */
+
 .lines-title {
   grid-area: l-t;
   font-size: 24px;
   line-height: 1.2;
 }
 .lines-description {
+  border-right: 2px solid #f2994a;
+  padding-right: 5px;
   grid-area: l-d;
   font-size: 12px;
   line-height: 1.2;
 }
+@media (max-width: 768px) {
+  .bitcoin-title,
+  .lines-title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  .bitcoin-description,
+  .lines-description {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  .bitcoin-description,
+  .lines-description {
+    border-right: none;
+  }
+}
 /* _________________4 paragraph */
-/* .projects-wrapper {
-  width: 1176px;
-} */
-/* .wrapper-four-paragraphs-long {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas:
-    'p-t  p-t p-t '
-    'des-first des-second progects-descrsption-about progects-descrsption-last';
-  column-gap: 5px;
-} */
+
 .projects-title {
   grid-area: p-t;
   font-weight: 700;
@@ -251,13 +241,11 @@ body {
 }
 .project-description-first {
   grid-area: des-first;
-
   font-size: 12px;
   line-height: 1.2;
 }
 .project-description-second {
   grid-area: des-second;
-
   font-size: 12px;
   line-height: 1.2;
 }
@@ -268,73 +256,155 @@ body {
 }
 .project-description-last {
   grid-area: des-last;
-
   font-size: 12px;
   line-height: 1.2;
 }
-/*  last  line______________________ */
-/* .printer-wrapper {
-  width: 438px;
-} */
+/*  last  line______________________3____________ */
+
+.part-third {
+  display: grid;
+  grid-template-columns: 2.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+  grid-template-rows: repeat(6, 100px);
+  grid-template-areas:
+    'p-w f-t cr-t last-w last-w last-w'
+    'p-w f-d-o cr-descr last-w last-w last-w'
+    'p-w f-d-o cr-descr cust-l cust-l cust-l'
+    'p-t f-d-o good-t good-t good-t good-t'
+    'p-d f-d-t good-d good-d good-d good-d'
+    'p-d f-d-t good-d good-d good-d good-d';
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .part-third {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'p-w'
+      'p-t'
+      'p-d'
+      'l-d'
+      'f-t'
+      'f-d-o'
+      'f-d-t'
+      'cr-t '
+      'cr-descr'
+      'last-w'
+      'good-t'
+      'good-d';
+    align-items: center;
+    align-content: center;
+    gap: 15px;
+  }
+}
+
+.printer-wrapper {
+  grid-area: p-w;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: rgb(4, 118, 131);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.5);
+}
 .photo-printer {
-  width: 426px;
-  /* height: 284px; */
   object-fit: cover;
 }
 .printer-title {
-  width: 426px;
+  grid-area: p-t;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 26px;
   line-height: 1.2;
 }
 .printer-description {
+  grid-area: p-d;
   font-size: 14px;
   line-height: 1.2;
 }
-.family-wrapper {
-  width: 286px;
+@media (max-width: 768px) {
+  .printer-wrapper {
+    height: 400px;
+  }
+  .printer-title,
+  .printer-description {
+    font-size: 24px;
+    line-height: 1.5;
+  }
 }
+
+/* ______________________ */
 .family-title {
-  width: 276px;
+  grid-area: f-t;
+  font-size: 24px;
+  font-weight: 600;
 }
 .family-description-one {
-  width: 276px;
-  margin-top: 10px;
+  border-right: 2px solid #f2994a;
+  padding-right: 5px;
+  padding-left: 5px;
+
+  grid-area: f-d-o;
+  font-size: 14px;
+  line-height: 1.2;
 }
 .family-description-two {
-  width: 276px;
-  margin-top: 5px;
+  border-left: 2px solid #f2994a;
+  padding-right: 5px;
+  padding-left: 5px;
+  grid-area: f-d-t;
+  font-size: 14px;
+  line-height: 1.2;
 }
-.crypto-wrapper {
-  width: 276px;
-}
+/* _________________________ */
 .crypto-title {
+  grid-area: cr-t;
   font-size: 24px;
-  width: 276px;
   line-height: 1.6;
 }
 .crypto-description {
+  grid-area: cr-descr;
   font-size: 14px;
   line-height: 1.2;
 }
+/* ___________________________ */
 .last-wrapper {
-  width: 726px;
+  grid-area: last-w;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #000d1f;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.5);
 }
-.photo-last {
-  width: 726px;
-  height: 248px;
-}
-.good-wrapper {
-  width: 1026px;
+@media (max-width: 768px) {
+  .last-wrapper {
+    height: 300px;
+  }
+  .family-description-one {
+    border-right: none;
+    border-left: none;
+  }
+  .family-description-two {
+    border-right: none;
+    border-left: none;
+  }
 }
 .good-title {
-  width: 1026px;
-  font-size: 64px;
+  grid-area: good-t;
+  border-top: 2px solid #f2994a;
+  margin-top: -20px;
+  padding-top: 20px;
+  font-size: 44px;
   font-weight: 700;
   line-height: 1.1;
 }
 .good-description {
-  width: 1026px;
+  grid-area: good-d;
   font-size: 14px;
   line-height: 1.2;
 }
